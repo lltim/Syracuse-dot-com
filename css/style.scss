@@ -1,31 +1,12 @@
-$syrBlue: #375772;
-$primaryFont: Arial;
-h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
-    padding: 0;
-}
-body {
-    background-color: yellow;
-}
-header {
-    background-color: black;
-    color: white;
-    padding: 10px;
-}
-main {
-    background-color: white;
-    padding: 10px;
-    color: $syrBlue;
-    h1 {
-        font-family: $primaryFont;
-        font-size: 36px;
-    }
-    h2{
-        font-family: $primaryFont;
-        font-size: 28px;
-    }
-}
-footer {
-    background-color: $syrBlue;
-    padding: 10px;
-}
+@import 
+    'base/variables',
+    'base/mixins',
+    'base/foundation';
+
+@import
+    'regions/header',
+    'regions/sidebar',
+    'regions/footer';
+
+@import
+    'views/home';

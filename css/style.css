@@ -4,32 +4,55 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 body {
-  background-color: yellow;
+  background-color: orange;
 }
 
+.container {
+  width: 100%;
+}
+
+@media all and (min-width: 700px) {
+  body {
+    background-color: green;
+  }
+
+  .container {
+    width: 96%;
+    margin: 0 auto;
+  }
+}
+@media all and (min-width: 1000px) {
+  body {
+    background-color: blue;
+  }
+
+  .container {
+    width: 1000px;
+  }
+}
 header {
   background-color: black;
   color: white;
-  padding: 10px;
-}
-
-main {
-  background-color: white;
-  padding: 10px;
-  color: #375772;
-}
-main h1 {
-  font-family: Arial;
-  font-size: 36px;
-}
-main h2 {
-  font-family: Arial;
-  font-size: 28px;
 }
 
 footer {
   background-color: #375772;
   padding: 10px;
+}
+
+h1 {
+  font-family: Arial;
+  font-size: 60px;
+  color: limegreen;
+}
+
+.showcase {
+  background-color: black;
+  color: white;
+}
+.showcase .primary {
+  background-color: purple;
+  min-height: 500px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,12 @@
+h1 {
+    @include buildFont(Arial,60px,limegreen)
+}
+
+.showcase{
+    background-color: black;
+    color: white;
+    .primary{
+        background-color: purple;
+        min-height: 500px;
+    }
+}
